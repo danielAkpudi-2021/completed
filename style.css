@@ -1,0 +1,326 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+   text-decoration: none; 
+}
+
+ul{
+    margin: 0;
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+}
+h1{
+    margin-top: 0;
+    color: #383e56;
+    font-size: 55px;
+}
+p{
+    line-height: 1.6;
+    color: #576366;
+    font-size: 19px;
+    font-weight: bolder;
+}
+
+.Da-manager-logo{
+    width: 200px;
+    height: 42px;
+    background-color: #fff;
+
+}
+
+.wrap{
+    min-height: calc(100vh - 32px);
+}
+
+nav{
+    background-color: #383e56;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+
+nav li a{
+    color: #fb743e;
+    font-size: 19px;
+    padding-left: 20px;
+}
+
+a.current{
+    color: #fff;
+}
+
+nav li a:hover{
+    color: #fff;
+}
+
+/* section-1 styling */
+.section-1 {
+    height: 70vh;
+}
+
+.section-1-img {
+    height: 70vh;
+    width: 100%;
+}
+
+/* section 2 styling */
+.section-2{
+    background-color: #fff;
+    padding: 100px;
+    text-align: center;
+
+}
+.section-2 h1{
+    
+}
+
+.section-2 p{
+    
+}
+
+/* section 3 styling */
+.section-3{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    padding: 100px 70px;
+    border-top: 2px solid rgba(199, 199, 199, 0.2);
+}
+
+.section-3 img{
+    height: 280px;
+    width: 280px;
+    
+}
+
+.section-3 p{
+    text-align: center;
+    color: #576366;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.section-3 div{
+    border: 2px solid rgba(199, 199, 199, 0.2);
+}
+
+/* section 4 sytling */
+.section-4{
+    text-align: center;
+    background-color: #f9fafa;
+    padding: 100px;
+    font-size: 30px;
+    border-top: 2px solid rgba(199, 199, 199, 0.2);
+
+}
+
+.section-4 i{
+    padding: 0 20px;
+}
+
+/* --------------------------
+about page styles starts
+---------------------- */
+.main-div{
+    display: flex;
+    padding: 100px;
+}
+.div-1 p{
+    margin-right: 20px;
+}
+
+.div-2 img{
+    width: 500px;
+    height: 400px;
+}
+.div-3{
+    padding: 0 300px 100px;
+}
+
+/* --------------------------
+about page styles ends
+---------------------- */
+
+/* --------------------------
+contact page styles starts
+---------------------- */
+.main-div-1 img{
+    max-width: 500px;
+    width: 100%;
+    height: 100%;
+}
+.main-div-1 {
+    margin: 100px;
+    display: flex;
+    border: 1px solid rgba(199, 199, 199, 0.2);
+    
+}
+.inner-div-1{
+    padding: 30px;
+}
+
+.main-div-2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    top: -200px;
+}
+.main-div-2 i{
+    font-size: 50px;
+}
+.main-div-2 button{
+    background-color: #fb743e;
+    color: #fff;
+    padding: 15px 10px;
+    border: none;
+}
+.card-1 .p-2{
+    color: #fb743e;
+}
+.card-1,
+.card-2{
+    border: 1px solid rgba(199, 199, 199, 0.2); 
+    padding: 30px;
+    width: 400px;
+    background-color: #fff;
+
+}
+.card-1{
+    margin-right: 20px;
+}
+.card-2{
+    margin-left: 20px;
+}
+
+
+
+/* --------------------------
+contact page styles ends
+---------------------- */
+
+footer{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+    /* height: 40px ;
+    width: 100%; */
+}
+
+@media(max-width: 1200px){
+    .card-1,
+    .card-2{
+        max-width: 270px;
+        width: 100%;
+    }
+}
+
+@media(max-width: 1000px){
+
+    .section-3{
+        flex-wrap: wrap;
+    }
+    .section-3 div{
+        margin: 30px 0;
+    }
+    .main-div{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .main-div p{
+        margin-bottom: 60px;
+    }
+    .main-div img{
+        text-align: center;
+    }
+    .div-3{
+        padding: 0 100px 100px;
+    }
+  
+    .main-div-2 {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        top: 0;
+    }
+
+    .card-1{
+        margin-right: 0px;
+    }
+    .card-2{
+        margin: 30px 0 100px;
+    }
+
+
+}
+
+@media(max-width: 837px){
+    .section-2 {
+        padding: 100px 50px;
+    }
+    h1{
+        font-size: 50px;
+    } 
+    .section-2 p{
+        text-align: left;
+    }
+
+    .main-div-1{
+        flex-wrap: wrap;
+        border: none;
+        justify-content: center;
+        margin: 50px 20px;
+    }
+    .main-div-1 img{
+        text-align: center;
+    }
+}
+
+@media(max-width: 690px){
+    nav{
+        flex-direction: column;
+    }
+    nav ul{
+        padding: 30px 0 0;
+    }
+    nav ul a{
+        padding: 0 25px;
+    }
+    .section-1 {
+        height: 50vh;
+    }
+    
+    .section-1-img {
+        height: 50vh;
+        width: 100%;
+    }
+    h1{
+        font-size: 35px;
+        text-align: left;
+    }
+    .section-4 {
+        padding: 100px 20px;
+    }
+   
+    .main-div,
+    .div-3{
+        padding: 100px 40px;
+    }
+
+    .main-div{
+        padding-bottom: 0;
+    }
+    .main-div img{
+        width: 350px;
+        height: 350px;
+    }
+    
+
+}
